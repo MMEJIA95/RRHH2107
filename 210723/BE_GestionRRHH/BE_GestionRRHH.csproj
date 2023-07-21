@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{675BA2BB-2B63-4B1E-92F8-2E0EA945F1EE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BE_GestionRRHH</RootNamespace>
+    <AssemblyName>BE_GestionRRHH</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.DataAccess.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="eAusencia.cs" />
+    <Compile Include="eEmailingBoleta.cs" />
+    <Compile Include="eFacturaProveedor.cs" />
+    <Compile Include="eFiltros.cs" />
+    <Compile Include="eFormatoContable.cs" />
+    <Compile Include="eItems.cs" />
+    <Compile Include="eSolucion.cs" />
+    <Compile Include="eSubModulo.cs" />
+    <Compile Include="eTrabajadorMasivo.cs" />
+    <Compile Include="eVacaciones.cs" />
+    <Compile Include="eVariableGeneral.cs" />
+    <Compile Include="FormatoMD\eFormatoMD_Grupo.cs" />
+    <Compile Include="FormatoMD\eFormatoMD_General.cs" />
+    <Compile Include="FormatoMD\eFormatoMD_Parametro.cs" />
+    <Compile Include="FormatoMD\eFormatoMD_Seguimiento.cs" />
+    <Compile Include="FormatoMD\eFormatoMD_Vinculo.cs" />
+    <Compile Include="FormatoMD\eTrabajadorDocumentoInfo.cs" />
+    <Compile Include="eCiudades.cs" />
+    <Compile Include="eEmpresa.cs" />
+    <Compile Include="eGlobales.cs" />
+    <Compile Include="ePerfil.cs" />
+    <Compile Include="eProveedor.cs" />
+    <Compile Include="eProveedor_Empresas.cs" />
+    <Compile Include="eRUC_SUNAT.cs" />
+    <Compile Include="eSistema.cs" />
+    <Compile Include="eTipoCambio.cs" />
+    <Compile Include="eTipoGastoCosto.cs" />
+    <Compile Include="eTrabajador.cs" />
+    <Compile Include="eUnidadNegocio.cs" />
+    <Compile Include="eUsuario.cs" />
+    <Compile Include="eUsuario_Empresas.cs" />
+    <Compile Include="eVentana.cs" />
+    <Compile Include="eVersion.cs" />
+    <Compile Include="FormatoMD\eTrabajador_InfoFormatoMD.cs" />
+    <Compile Include="FormatoMD\pQFormatoMD.cs" />
+    <Compile Include="pConsultaBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
